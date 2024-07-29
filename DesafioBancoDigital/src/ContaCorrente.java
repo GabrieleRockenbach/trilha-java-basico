@@ -1,8 +1,10 @@
 
 public class ContaCorrente extends Conta {
 
-	public ContaCorrente(Cliente cliente) {
+	public ContaCorrente(Cliente cliente , Banco banco ) {
 		super(cliente);
+		tipoConta = "Conta Corrente";
+		banco.adicionarConta(this);
 	}
 
 	@Override
